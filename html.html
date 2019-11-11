@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <title>List</title>
+</head>
+
+<body>
+    <div id="info">
+        <input type = "text" placeholder = "Ctrl+F">
+        <button class = "search">Search</button>
+        <table class="table=poduct" border="1" cellspacing="0" cellpadding="6">
+            <thead>
+                <tr>
+                    <td>Производитель</td>
+                    <td>Модель</td>
+                    <td>Двигатель</td>
+                    <td>Объем двигателя</td>
+                    <td>Мощность двигателя</td>
+                    <td>Трансмиссия</td>
+                    <td>Привод</td>
+                </tr>
+            </thead>
+            <tbody id="body-item"></tbody>
+        </table>
+        <button class="btn btn-add" value="add">Добавить</button>
+    </div>
+    <div id="add">
+        <h1>Добавить машину</h1>
+        <div class="main">
+            <div class="form-control">
+                <label>Производитель</label>
+                <input name="manufacturer" type="text">
+            </div>
+            <div class="form-control">
+                <label>Модел</label>
+                <input name="model" type="text">
+            </div>
+            <div class="form-control">
+                <label>Двигатель</label>
+                <select name="dvigatel">
+                    <option>Дизель</option>
+                    <option>Турбо-дизель</option>
+                    <option>Вин-дизель</option>
+                    <option>Бензин</option>
+                    <option>Турбо-бензин</option>
+                    <option>Водород</option>
+                    <option>Газ</option>
+                    <option>Электрический</option>
+                    <option>Гибрид</option>
+                    <option>Шестнарь</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label>Рабочий объем ДВС</label>
+                <input name="objom" type="text">
+            </div>
+            <div class="form-control">
+                <label>Мощность</label>
+                <input name="hp" type="text">
+            </div>
+            <div class="form-control">
+                <label>Трансмиссия</label>
+                <select name="transmissia">
+                        <option>Механика</option>
+                        <option>Автомар</option>
+                        <option>Робот</option>
+                        <option>Секвентальная</option>
+                        <option>Илон Маск</option>
+                    </select>
+            </div>
+            <div class="form-control">
+                <label>Привод</label>
+                <select name="privod">
+                        <option></option>
+                        <option>Передний</option>
+                        <option>Задний</option>
+                        <option>Полный</option>
+                        <option>Подключаемый полный</option>
+                    </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-save" value="save">Создать</button>
+    </div>
+    <script src="js.js"></script>
+</body>
